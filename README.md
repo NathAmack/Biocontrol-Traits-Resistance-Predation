@@ -2,7 +2,7 @@
 
 Version 0
 
-A small trial
+A small trial to compare the growth of a subset of protist species on different bacterial isolates.
 
 
 ## Project organization
