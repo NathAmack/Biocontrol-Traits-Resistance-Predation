@@ -4,6 +4,12 @@ Version 0
 
 A small trial to compare the growth of a subset of protist species on different bacterial isolates.
 
+**Requirements**
+The project is run on R version 3.4.3 (2017-11-30)
+Platform: i386-w64-mingw32/i386 (32-bit)
+Running under: Windows >= 8 x64 (build 9200)
+Requires to install.packages("ggplot2"), install.packages("gplots"), install;packages("RColorBrewer") and install.packages("nlme"). 
+
 **Description of the data**
 * We have 3 different time points: day 1, day 3 and day 5.
 * The raw data contains two media: 2%KB and PAS. We focus on 2%KB.
