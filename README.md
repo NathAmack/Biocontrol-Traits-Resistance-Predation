@@ -13,7 +13,7 @@ A small trial to compare the growth of a subset of protist species on different 
 * We want to have a descriptive analysis and plot the data in a boxplot.
 * We also want to go through a statistical analysis to test if there is any differences between the groups. To do so, we test different models. 
   * A first approach is to use a model based on a generalized least square to check assumptions. Using plot allows to visually check for heterosedasticity. If heterosedasticity is observed, we can run a second model based on gls but allowing for different variance for the groups. We can compare these two models using anova().
-  * A second approach is to use glm() and a poisson distribution because our data are working with counts data. In case we expect overdispersion (*i.e.* the variance is larger than the mean), we can correct the standrad errors using a quasi-GLM model (p.226, Zuur et al. book). We can comparte these two models using anova() with test="Chi". 
+  * A second approach is to use glm() and a poisson distribution because our data are working with counts data. In case we expect overdispersion (*i.e.* the variance is larger than the mean), we can correct the standrad errors using a quasi-GLM model (p.226, Zuur *et al.* book). We can comparte these two models using anova() with test="Chi". 
 * We then create a heatmap to have an overview of all interactions 
 
 
