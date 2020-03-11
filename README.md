@@ -4,12 +4,12 @@ Version 0
 
 A small trial to compare the growth of a subset of protist species on different bacterial isolates.
 
-** Description of the data **
+# **Description of the data**
 * We have 3 different time points: day 1, day 3 and day 5.
 * The raw data contains two media: 2%KB and PAS. We here focus on 2%KB.
 * The raw data also contains protist cyst counts in addition to the active individuals, we here focus on the active individuals.
   
-** Description of the analysis **
+# **Description of the analysis**
 * We want to have a descriptive analysis and plot the data in a boxplot.
 * We also want to go through a statistical analysis to test if there is any differences between the groups.
 * We then create a heatmap to have an overview of all interactions 
