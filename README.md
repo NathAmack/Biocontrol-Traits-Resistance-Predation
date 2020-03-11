@@ -4,7 +4,7 @@ Version 0
 
 A small trial to compare the growth of a subset of protist species on different bacterial isolates.
 
-Open mainAmack.R
+Open Trial (RProject) and then the file mainAmack.R
 
 **Requirements**
 The project is run on R version 3.4.3 (2017-11-30)
