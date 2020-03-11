@@ -1,8 +1,11 @@
-# Project1
+# Project
 
 Version 0
 
 A small trial to compare the growth of a subset of protist species on different bacterial isolates.
+We focus on the active individuals ant on the medium 2%KB.
+We want to have a descriptive analysis and plot the data in a boxplot.
+We also want to go through a statistical analysis to test if there is any differences between the groups.
 
 
 ## Project organization
