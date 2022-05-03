@@ -22,9 +22,10 @@ Packages requirements are given in the beginning of each script.
   
 **Description of the analysis**
 * First, we investigated the growth of protists on the different bacterial isolates in 2% KB
-    *   1.1 we investigated the growth of all protists combined on the different bacterial isolates in 2% KB using a zero-inflated model hurdle or two-part for our         data (Zuur et al., 2009, doi: 10.1007/978-0-387-87458-6) to explain the achieved protist densities with bacterial isolates as explanatory variables 
-    *   1.2 We also investigated the growth of each protist separately on each bacterial isolate.using an ANOVA analysis (stats:lm and base:summary) on the square           root transformed data, using bacterial isolates as explanatory variable for the protist density at day 3 in 2% KB
-    *   1.3 We computed a heatmap to show the protist density of each species in co-culture with each bacterial isolate (gplots:heatmap; Warnes et al., 2016;               https://github.com/talgalili/gplots (accessed January, 2020).
+    *   we investigated the growth of all protists combined on the different bacterial isolates in 2% KB using a zero-inflated model hurdle or two-part for our             data (Zuur et al., 2009, doi: 10.1007/978-0-387-87458-6) to explain the achieved protist densities with bacterial isolates as explanatory variables 
+        Rcode named as ""ProtistDensityCombined.R"; we tested different models
+    *   We also investigated the growth of each protist separately on each bacterial isolate.using an ANOVA analysis (stats:lm and base:summary) on the square               root transformed data, using bacterial isolates as explanatory variable for the protist density at day 3 in 2% KB
+    *   We computed a heatmap to show the protist density of each species in co-culture with each bacterial isolate (gplots:heatmap; Warnes et al., 2016;                   https://github.com/talgalili/gplots (accessed January, 2020).
 
 * Second, we investigated the effect of protists on the bacterial density using as proxy the OD600
     *   We plotted the treatment mean of bacterial density against the treatment mean of protist density [log10(active cells cm^2 + 1); addition of a one because
