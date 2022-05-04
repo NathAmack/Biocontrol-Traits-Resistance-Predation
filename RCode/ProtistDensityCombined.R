@@ -52,8 +52,7 @@ par(mar=c(5,4,4,2)+0.1, mfrow=c(1,1))
 
 # for protist density 
 
-mydatasetP <- read.table("../Data/exp_setup3_counts.txt",sep="\t",header=T,row.names=1)
-# mydatasetP <- read.csv2("../Data/exp_setup3_counts.csv") # if you change the txt into csv file
+mydatasetP <- read.table("../Data/processed/exp_setup3_counts.txt")
 # rename the columns
 colnames(mydatasetP) <- c("day","plate","Row","Col","medium","protozoa","bacteria","state","estimation")
 
