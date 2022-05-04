@@ -70,6 +70,13 @@ mydatasetP <- subset(mydatasetP, mydatasetP$bacteria!="")
 #           F=RPBP2; G=RBBP4; H=RBAN4; I=SVMP4
 #
 
+# check the structure of the data
+str(mydatasetP)
+# change to the correct type
+mydatasetP$bacteria <- as.factor(mydatasetP$bacteria)
+mydatasetP$protozoa <- as.factor(mydatasetP$protozoa)
+
+# set a defined order for the factor bacteria
 mybactorder <- factor(mydatasetP$bacteria, 
                       levels= c("A","F","E","H","G","B","C","I", "D"))
 # correspond to -> ("Ecoli","SPSA5","RPBP2","SVBP8","RBAN4","RBBP4","SMMP3",  
