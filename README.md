@@ -19,6 +19,8 @@ Packages requirements are given in the beginning of each script.
 * The raw data contains two media: 2%KB and PAS. We focus on 2%KB in most data analysis.
 * The raw data also contains protist cyst (*i.e.* dormant stage) counts in addition to the active individuals, we focus on the active individuals.
 * Bacterial traits and related indexes of the Pseudomonas spp. as characterized by from Agaras et al. 2015 (doi: 10.1016/j.biocontrol.2015.07.003) and Agaras et al.   2018 (doi: 10.1371/journal.pone.0194088); The indexes proposed by Agaras et al. (2015) are: the Biocontrol Potential Index (BPI, e.g., antibiotic genes, HCN         production, lytic enzymes) and the Direct Growth Promotion Index (DGPI, e.g., P solubilization, IAA, ACC deaminase). The Colonization Potential Index (CPI) was     constructed considering motility, quorum sensing, and biofilm activities separately from the rest.
+
+! If no growth of protists was observed in PAS AND in 2%KB, the treatment is removed from the dataset. This was only the case for protists grown on RBAN4. We removed RBAN4 from the study. In addition, RBAN4 showed opposite pattern compared to the previous setup. The other protists showed growth in either PAS or 2%KB. Some did only grow in 2%KB, suggesting an important role of bottom up control. 
   
 **Description of the analysis**
 * First, we investigated the growth of protists on the different bacterial isolates in 2% KB;   Rcode named as "ProtistDensityCombined.R"
