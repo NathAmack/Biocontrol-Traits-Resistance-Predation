@@ -184,10 +184,11 @@ plot(modelglm)
 plot(modelglm, which=1)
 
 # create square root transformed data
+# apply square root transformation to decrease heteroscedasticity
 Y <- MySubset$estimation 
 SQRTY <- sqrt(Y)
 X <- MySubset$bacteria 
-modelglm <- glm(SQRTY ~ X) # apply square root transformation to decrease heteroscedasticity
+modelglm <- glm(SQRTY ~ X) 
 summary(modelglm)
 plot(modelglm)
 plot(modelglm, which=1)
@@ -197,7 +198,7 @@ summary(mylm)
 plot(mylm)
 # note that glm() = lm() if nothing more is specified in glm()
 
-
+# Generalized least square model (gls)
 ## gls with VarIdent -> to account for heteroscedasticity
 
 mygls <- gls(Y ~ X, weights = varIdent(form=~1|X))
@@ -205,7 +206,7 @@ mygls <- gls(Y ~ X, weights = varIdent(form=~1|X))
 plot(mygls)
 summary(mygls)
 
-
+# Generalized Linear model (glm)
 ## glm with poisson distribution 
 modelGLMPoisson <- glm(Y~X, family=poisson)
 plot(modelGLMPoisson)
@@ -336,4 +337,6 @@ plot(mygls1)
 anova(mygls1)
 summary(mygls1)
 AIC(mygls1)
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
