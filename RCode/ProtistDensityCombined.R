@@ -340,9 +340,10 @@ anova(mygls1)
 summary(mygls1)
 AIC(mygls1)
 
-# Note that we used a zero inflated model hurdle in the version of the MS (pscl::hurdle; ZANB in the cocde above)
+# Note that we used a zero inflated model hurdle in the version of the MS (pscl::hurdle; ZANB in the code above)
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 # 2.1 growth of all protists combined on the different bacterial isolates in 2% KB ####
+
 
