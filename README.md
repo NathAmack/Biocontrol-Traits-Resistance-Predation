@@ -2,7 +2,7 @@
 
 Version 0
 
-You can find here the different R scripts used for the data analysis done in the research project published in 2020 in Frontiers in Microbiology (doi: 10.3389fmicb.2020.614194)
+You can find here the different R scripts used for the data analysis done in the research project published in 2020 in Frontiers in Microbiology (doi: 10.3389fmicb.2020.614194).
 Note that the phylogenetic analyses described in the paper were done by the co-authors and are thus not given here.
 
 We studied the ability of 6 different protist species to grow on different bacteria (7 Pseudomonas spp. and *Escherichia coli*) in an *in vitro* assay (randomly set in 7 96-wells plates). We investigated the relative importance of different bacterial traits previously characterized and related to biocontrol ability, plant growth promotion, and (root) colonization.
