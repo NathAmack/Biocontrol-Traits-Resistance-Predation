@@ -85,7 +85,7 @@ mybactorder <- factor(mydatasetP$bacteria,
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-# Visualization of the data for a first appreciation ####
+# 1.Visualization of the data for a first appreciation ####
 # Plot the data of the active individuals in PAS or 5%KB and at day 5 or 3 
 
 Active <- subset(mydatasetP, mydatasetP$state=="active")
@@ -122,12 +122,14 @@ ActiveKBD5 <- subset(ActiveKB, ActiveKB$day=="5")
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+# 2. Analysis of achieved protist density on the bacteria #####
+
 mydatasetP$estimation <- as.numeric(mydatasetP$estimation)
 # remove RBAN4 from the dataset
 mydatasetP <- subset(mydatasetP, mydatasetP$bacteria!="H")
     
     
-# 1.1 growth of all protists combined on the different bacterial isolates in 2% KB ####
+# 2.1 growth of all protists combined on the different bacterial isolates in 2% KB ####
 
 # response variable:  estimation [ind./cm^2] OR [cysts/cm^2]
 #                     type of data: count data
@@ -338,5 +340,9 @@ anova(mygls1)
 summary(mygls1)
 AIC(mygls1)
 
+# Note that we used a zero inflated model hurdle in the version of the MS (pscl::hurdle; ZANB in the cocde above)
+
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+# 2.1 growth of all protists combined on the different bacterial isolates in 2% KB ####
 
