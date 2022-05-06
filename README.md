@@ -21,9 +21,8 @@ Packages requirements are given in the beginning of each script.
 * Bacterial traits and related indexes of the Pseudomonas spp. as characterized by from Agaras et al. 2015 (doi: 10.1016/j.biocontrol.2015.07.003) and Agaras et al.   2018 (doi: 10.1371/journal.pone.0194088); The indexes proposed by Agaras et al. (2015) are: the Biocontrol Potential Index (BPI, e.g., antibiotic genes, HCN         production, lytic enzymes) and the Direct Growth Promotion Index (DGPI, e.g., P solubilization, IAA, ACC deaminase). The Colonization Potential Index (CPI) was     constructed considering motility, quorum sensing, and biofilm activities separately from the rest.
   
 **Description of the analysis**
-* First, we investigated the growth of protists on the different bacterial isolates in 2% KB
+* First, we investigated the growth of protists on the different bacterial isolates in 2% KB;   Rcode named as "ProtistDensityCombined.R"
     *   we investigated the growth of all protists combined on the different bacterial isolates in 2% KB using a zero-inflated model hurdle or two-part for our             data (Zuur et al., 2009, doi: 10.1007/978-0-387-87458-6) to explain the achieved protist densities with bacterial isolates as explanatory variables 
-        Rcode named as "ProtistDensityCombined.R"; we tested different models
     *   We also investigated the growth of each protist separately on each bacterial isolate.using an ANOVA analysis (stats:lm and base:summary) on the square               root transformed data, using bacterial isolates as explanatory variable for the protist density at day 3 in 2% KB
     *   We computed a heatmap to show the protist density of each species in co-culture with each bacterial isolate (gplots:heatmap; Warnes et al., 2016;                   https://github.com/talgalili/gplots (accessed January, 2020).
 
